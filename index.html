@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practices</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div>
+        <h1>HTML</h1>
+        <h1>Hello, this is Kalyan Bandaru.</h1>
+        <p>Welcome to my html basics practice sessions.</p>
+        <br/>
+        <hr/>
+        <br/>
+        <h1>Hello World!</h1>
+        <h2>Hello World!</h2>
+        <h3>Hello World!</h3>
+        <h4>Hello World!</h4>
+        <h5>Hello World!</h5>
+        <h6>Hello World!</h6>
+        <p>Hello world!<br/> Welcome you all to the Coding Ninjas.<hr/> Let's start learning.</p>
+        <br/>
+        <hr/>
+        <br/>
+        <h3>href attribute</h3>
+        <a href="https://kalyanbandaru.netlify.app/">My personal portfolio website</a>
+        <p>href attribute specifies the URL of the page, the link which we need to provide in the anchor tag.</p>
+        <br/>
+        <br/>
+        <h3>src, alt, height and width attributes</h3>
+        <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/29628/polo-exterior-left-rear-three-quarter-2.jpeg?q=80" alt="Polo GT India" height="500" width="900" />
+        <p>
+            The "img" tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed.<br/>
+            The "img" tag contains the width and height attributes, which specifies the width and height of the image (in pixels).<br/>
+            alt attribute or alternate text tells the reader what they are missing on a page if the browser can't load images. The browser will then display the alternate text instead of the image.
+        </p>
+        <br/>
+        <hr/>
+        <br/>
+        <form action="/tags_and_elements.html" method="get">
+            <label htmlfor="fname">First name</label>
+            <input type="text" id="fname" name="firstname" />
+            <br/>
+            <label htmlfor="lname">Last name</label>
+            <input type="text" id="lname" name="lastname" />
+            <br/>
+            <input type="submit" value="Submit as User" />
+            <input type="submit" formaction="/html_basics.html" value="Submit as Admin" />
+        </form>
+        <br/>
+        <br/>
+        <h3>action attribute:</h3>
+        <p>
+            The action attribute defines the action to be performed when the form is submitted.
+            It tells where the form data is sent when the form is submitted. This contains the 
+            address (i.e. URL) of the file where the data is sent. The URL can be provided in an 
+            absolute and relative path.<br/>
+            NOTE:  If the action attribute is not mentioned, the action is set to the current page URL.
+        </p>
+        <br>
+        <h3>method attribute:</h3>
+        <p>
+            The method attribute defines how the form data is sent. It specifies the HTTP method to be used 
+            when submitting the form data.The form-data can be sent as URL variables (with method="GET") or 
+            as HTTP post transaction (with method="POST").<br/>
+            NOTE: The default HTTP method when submitting form data is GET. 
+        </p>
+        <h4>GET method</h4>
+        <p>
+            This method appends the data into the URL with '?' as a separator in name-value pairs. Since this 
+            data will be visible, so sensitive data (like passwords) should not be sent. This can be used to 
+            send query strings.
+        </p>
+        <h4>POST method</h4>
+        <p>
+            This method appends the data inside the body of the HTTP request. The post is used to send the 
+            sensitive data (the submitted form data is not shown in the URL).
+        </p>
+        <br/>
+        <h3>formaction attribute</h3>
+        <p>
+            The input formation attribute specifies the URL of the file that will process the input when 
+            the form is submitted using that specific button.<br/>
+            NOTE :  This attribute overrides the action attribute of the "form" element.
+        </p>
+        <br/>
+        <hr/>
+        <br/>
+        <table border="1">
+            <caption>Table Example</caption>
+            <thead>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+                <th>Heading 3</th>
+                <th>Heading 4</th>
+                <th>Heading 5</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1, cell 1</td>
+                    <td>Row 1, cell 2</td>
+                    <td>Row 1, cell 3</td>
+                    <td>Row 1, cell 4</td>
+                    <td>Row 1, cell 5</td>
+                </tr>
+                <tr>
+                    <td>Row 2, cell 1</td>
+                    <td>Row 2, cell 2</td>
+                    <td>Row 2, cell 3</td>
+                    <td>Row 2, cell 4</td>
+                    <td>Row 2, cell 5</td>
+                </tr>
+                <tr>
+                    <td>Row 3, cell 1</td>
+                    <td>Row 3, cell 2</td>
+                    <td>Row 3, cell 3</td>
+                    <td>Row 3, cell 4</td>
+                    <td>Row 3, cell 5</td>
+                </tr>
+                <tr>
+                    <td>Row 4, cell 1</td>
+                    <td>Row 4, cell 2</td>
+                    <td>Row 4, cell 3</td>
+                    <td>Row 4, cell 4</td>
+                    <td>Row 4, cell 5</td>
+                </tr>
+                <tr>
+                    <td>Row 5, cell 1</td>
+                    <td>Row 5, cell 2</td>
+                    <td>Row 5, cell 3</td>
+                    <td>Row 5, cell 4</td>
+                    <td>Row 5, cell 5</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                    <th>Column 4</th>
+                    <th>Column 5</th>
+                </tr>
+            </tfoot>
+        </table>
+        <br/>
+        <table border="1">
+            <thead>
+                <th>Heading 1</th>
+                <th colspan="2">Heading 2</th>
+                <th>Heading 3</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Row 1, cell 1</td>
+                    <td>Row 1, cell 2</td>
+                    <td>Row 1, cell 3</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Row 2, cell 1</td>
+                    <td>Row 2, cell 2</td>
+                    <td>Row 2, cell 3</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Row 3, cell 1</td>
+                    <td>Row 3, cell 2</td>
+                    <td>Row 3, cell 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr/><hr/>
+    <div>
+        <h1>CSS</h1>
+        <div class="bg-color">
+            Background Color Aquamarine
+        </div>
+        <br/>
+        <div class="bg-image"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
